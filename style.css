@@ -421,35 +421,72 @@ a.btn:nth-child(2)::before{
 }
 /* Skills section ---------------------------------------------------------------------------------------------------------------- */
 
-.skills {
+.skills{
     background: var(--secon-bg-color);
+    display: block;
 
 }
 .skill-main{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    row-gap: 30px;
-    column-gap: 50px;
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
 }
 
 .skill-bar{
     margin-bottom:2.3rem ;
+    margin-left: 15%;
 }
 .skill-main h3{
     margin-bottom: 2rem;
     font-size: var(--norma-font);
     text-align: center;
 } 
+
 .skill-left .skill-bar .info{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+   padding: 0 10px;
+   
 }
 
+.skill-left .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
 
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--hover-color);
+    border: 25px;
+    box-shadow: var(--neon-box-shadow);
+}
 
+.skill-bar .bar .html{
+    width: 80%;
+    animation: html 2s;
+}
+.skill-bar .bar .javascript{
+    width: 80%;
+    animation: javascript 3s;
+}
+.skill-bar .bar .react{
+    width: 80%;
+    animation: react 4s;
+}
+.skill-bar .bar .react-native{
+    width: 80%;
+    animation: react-native 5s;
+}
 
 
 
@@ -509,3 +546,40 @@ a.btn:nth-child(2)::before{
     }
 
 }
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes react {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes react-native {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
