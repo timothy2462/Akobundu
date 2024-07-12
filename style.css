@@ -525,7 +525,6 @@ a.btn:nth-child(2)::before{
     justify-content: center;
     align-items: center;
     border: 2px solid #fff;
-    /* margin-right: 10%; */
 }
 /* to work on later */
 
